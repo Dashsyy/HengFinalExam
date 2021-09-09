@@ -1,167 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Blog Home - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        {{Html::style(('css/style.css'))}}
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4">
-            <div class="container">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
-                </div>
-            </div>
-        </header>
-        <!-- Page content-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Home - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    {{Html::style('css/styles.css')}}
+    {{Html::style('css/owl.carousel.min.css')}}
+    {{Html::style('css/colorbox.css')}}
+    {{Html::style('css/owl.theme.default.min.css')}}
+    {{Html::style('css/docs.theme.min.css')}}
+    {{Html::script('js/scripts.js')}}
+    {{Html::script('js/owl.carousel.min.js')}}
+    {{Html::script('js/jquery.colorbox.js')}}
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <div class="row">
-                <!-- Blog entries-->
-                <div class="col-lg-8">
-                    <!-- Featured blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2021</div>
-                            <h2 class="card-title">Featured Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
-                    <!-- Nested row for non-featured blog posts-->
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pagination-->
-                    <nav aria-label="Pagination">
-                        <hr class="my-0" />
-                        <ul class="pagination justify-content-center my-4">
-                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
-                            <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">15</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">Older</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4">
-                    <!-- Search widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Search</div>
-                        <div class="card-body">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Categories</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Side widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Side Widget</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
-                    </div>
-                </div>
+            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                </ul>
             </div>
         </div>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </nav>
+    <!-- Page header with logo and tagline-->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Welcome to Product Computer!</h1>
+                <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+            </div>
+        </div>
+    </header>
+    <!-- Page content-->
+    <div class="container">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+                {!! Html::image("/img/products/chicken.jpg", "chicken.jpg", array('width'=>'120')) !!}
+            </div>
+        </div>
+        <div class="card-body">
+            @if (count($products) > 0)
+            <table class="table">
+                <thead>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>price</th>
+                    <th>photo</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>&nbsp;</th>
+                </thead>
+                <tbody>
+                    @foreach ($products as $product)
+                    <tr>
+                        <td>
+                            <div>{!! $product->id !!}</div>
+                        </td>
+                        <td>
+                            <div>{!! $product->name !!}</div>
+                        </td>
+                        <td>
+                            <div>{!! $product->description !!}</div>
+                        </td>
+                        <td>
+                            <div>{!! $product->price !!}</div>
+                        </td>
+                        <td>
+                            <div>{!! Html::image("/img/products/".$product->photo, $product->title, array('width'=>'60')) !!}</div>
+                        </td>
+                        <td><a href="{!! url('product/' . $product->id . '/edit') !!}">
+                                <button class="btn btn-primary">Edit</button>
+                            </a></td>
+                        <td>
+                            {!! Form::open(array('url'=>'product/'. $product->id, 'method'=>'DELETE')) !!}
+                            {!! csrf_field() !!}
+                            {!! method_field('DELETE') !!}
+                            <button class="btn btn-danger delete">Delete</button>
+                            {!! Form::close() !!}
+                        </td>
+                    </tr>
+
+                    @endforeach
+                </tbody>
+            </table>
+            <script>
+                $(".delete").click(function() {
+                    var form = $(this).closest('form');
+                    $('<div></div>').appendTo('body')
+                        .html('<div><h6> Are you sure ?</h6></div>')
+                        .dialog({
+                            modal: true,
+                            title: 'Delete message',
+                            zIndex: 10000,
+                            autoOpen: true,
+                            width: 'auto',
+                            resizable: false,
+                            buttons: {
+                                Yes: function() {
+                                    $(this).dialog('close');
+                                    form.submit();
+                                },
+                                No: function() {
+
+                                    $(this).dialog("close");
+                                    return false;
+                                }
+                            },
+                            close: function(event, ui) {
+                                $(this).remove();
+                            }
+                        });
+                    return false;
+                });
+            </script>
+            @endif
+        </div>
+    </div>
+
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    {{Html::style('css/styles.css')}}
+    {{Html::style('css/owl.carousel.min.css')}}
+    {{Html::style('css/colorbox.css')}}
+    {{Html::style('css/owl.theme.default.min.css')}}
+    {{Html::style('css/docs.theme.min.css')}}
+    {{Html::script('js/scripts.js')}}
+    {{Html::script('js/owl.carousel.min.js')}}
+    {{Html::script('js/jquery.colorbox.js')}}
+
+    <script>
+        const owlCarosel = $(".images");
+        let html = ``;
+        for (let i = 1; i <= 8; i++) {
+            html += `
+        <a
+          class="group1"
+          href="img/Sushi ${i}.png"
+          title="Me and my grandfather on the Ohoopee."
+        >
+        <img src="img/Sushi ${i}.png" alt="Sushi ${i}.png" />
+        </a>
+        `;
+        }
+        owlCarosel.after(html);
+
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 5,
+                loop: true,
+                margin: 10,
+            });
+
+            $(".group1").colorbox({
+                rel: "group1",
+                transition: "none",
+                width: "75%",
+                height: "75%",
+            });
+        });
+    </script>
+</body>
+
 </html>

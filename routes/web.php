@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FrontendController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +24,15 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 //route to category
-Route::get('/product', [ProductController::class, 'index']);
-Route::delete('/product/{category_id}', [ProductController::class, 'destroy']);
+Route::resource('/product', 'ProductController');
+
+//Auth
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
+Route::get('registration', [AuthController::class, 'registration'])->name('register');
+Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
+Route::get('dashboard', [AuthController::class, 'dashboard']);
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+//Frontend view
+Route::get('/', [FrontendController::class, 'index']);
